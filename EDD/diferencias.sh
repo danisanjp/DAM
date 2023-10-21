@@ -12,3 +12,16 @@ meld
 KDiff3
 vimdiff
 
+añadir cambios automaticamente a otros ficheros
+
+primero generalos el archivo patch
+
+diff -u file1.html file2.html > patchfile.diff
+
+ahora podemos automatizar el proceso
+
+patch file1.html patchfile.diff
+
+o 
+
+patch file1.html < patchfile.diff
